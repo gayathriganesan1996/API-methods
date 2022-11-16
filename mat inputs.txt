@@ -1,0 +1,23 @@
+<mat-form-field appearance="outline" class="col-md-12">
+                                <mat-label>Username</mat-label>
+                                <input matInput placeholder="Username" id="name" formControlName="username"> 
+                                <mat-error  *ngIf="submitted && f['username'].errors ||f['username'].touched && f['username'].errors && f['username'].errors['required']"
+                                class="invalid-feedback">
+                                     Name is Required!
+                                  </mat-error>
+                            </mat-form-field>
+
+
+
+ <div class="mb-3 mt-1 form-group">
+                            <mat-form-field appearance="outline" class="col-md-12">
+                                <mat-label>Password</mat-label>
+                                <input matInput placeholder="Password" id="password" formControlName="password"> 
+                                <mat-error  *ngIf="submitted && f['password'].errors ||f['password'].touched && f['password'].errors && f['password'].errors['required']"
+                                class="invalid-feedback">
+                                     Password is Required!
+                                  </mat-error>
+                            </mat-form-field>
+                            <p class="m-auto"><a class="text-decoration-none" routerLink="/forgot">Forgot
+                                password?</a></p>
+                        </div>
